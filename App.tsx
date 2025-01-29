@@ -5,7 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {InformationalScreenExample} from './app/InformationalScreen';
 import {TamaguiProvider} from '@tamagui/core';
 import {config} from './tamagui.config';
-import { AppRegistry } from 'react-native';
+import {AppRegistry} from 'react-native';
+import TextCarousel from './app/TextCarousel';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,9 +27,7 @@ export default function App() {
             config={config}
             defaultTheme="light"
         >
-            <NavigationContainer>
-                <RootStack />
-            </NavigationContainer>
+            <TextCarousel />
         </TamaguiProvider>
     );
 }
